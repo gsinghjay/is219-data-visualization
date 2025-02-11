@@ -9,16 +9,17 @@ const Home = () => (
     <div className="text-center w-100">
       <h1 className="display-4 mb-4">Food Safety Regulation Analysis</h1>
       <p className="lead mb-5">
-        Comparing food safety regulations between the US and EU, and examining their potential health implications.
+        Analyzing the relationship between food regulations in the US and EU, focusing on allowed ingredients,
+        obesity rates, and public health outcomes.
       </p>
       <div className="row g-4 justify-content-center mx-0">
         <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3" />
-              <h5 className="card-title">Ingredients Comparison</h5>
+              <h5 className="card-title">Ingredients Analysis</h5>
               <p className="card-text text-center">
-                Interactive table comparing banned and allowed ingredients in both regions.
+                Compare allowed and banned food additives between regions, including GRAS substances and E-numbers.
               </p>
             </div>
           </div>
@@ -29,7 +30,7 @@ const Home = () => (
               <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3" />
               <h5 className="card-title">Health Outcomes</h5>
               <p className="card-text text-center">
-                Side-by-side bar charts comparing health outcomes between regions.
+                Visualize obesity trends, mortality rates, and chronic disease prevalence across regions.
               </p>
             </div>
           </div>
@@ -38,9 +39,9 @@ const Home = () => (
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3" />
-              <h5 className="card-title">Regulatory Timeline</h5>
+              <h5 className="card-title">Regulatory Impact</h5>
               <p className="card-text text-center">
-                Timeline visualization of significant regulatory changes.
+                Track policy changes and their correlation with public health metrics over time.
               </p>
             </div>
           </div>
@@ -50,19 +51,26 @@ const Home = () => (
   </div>
 );
 
-// Create placeholder components for each visualization section
 const Ingredients = () => (
   <div className="container py-4">
-    <h2>Ingredients Comparison</h2>
+    <h2>Food Ingredients Analysis</h2>
     <p className="lead">
-      Interactive table comparing banned and allowed ingredients between US and EU food regulations.
+      Comprehensive comparison of food additives regulation between US and EU regions.
     </p>
     <div className="alert alert-info">
-      Visualization coming soon. This section will feature an interactive table showing:
+      <h5>Data Sources:</h5>
       <ul className="mb-0 mt-2">
-        <li>Banned ingredients in each region</li>
-        <li>Allowed ingredients with different restrictions</li>
-        <li>Filtering and search capabilities</li>
+        <li>FDA Food Additive Database</li>
+        <li>EU Food Additives Database (E-numbers)</li>
+        <li>GRAS (Generally Recognized as Safe) Substances</li>
+      </ul>
+    </div>
+    <div className="mt-4">
+      <h5>Coming Visualizations:</h5>
+      <ul>
+        <li>Interactive comparison table of allowed vs banned ingredients</li>
+        <li>Usage restrictions and limits visualization</li>
+        <li>Approval timeline comparison</li>
       </ul>
     </div>
   </div>
@@ -72,14 +80,23 @@ const HealthOutcomes = () => (
   <div className="container py-4">
     <h2>Health Outcomes Analysis</h2>
     <p className="lead">
-      Side-by-side bar charts comparing health statistics between US and EU populations.
+      Analysis of public health metrics and their potential correlation with food regulations.
     </p>
     <div className="alert alert-info">
-      Visualization coming soon. This section will feature bar charts comparing:
+      <h5>Key Metrics:</h5>
       <ul className="mb-0 mt-2">
-        <li>Key health metrics between regions</li>
-        <li>Trends over time</li>
-        <li>Statistical correlations with regulations</li>
+        <li>Obesity rates (adult and childhood)</li>
+        <li>Cardiovascular disease prevalence</li>
+        <li>Cancer rates (diet-related)</li>
+        <li>Diabetes prevalence</li>
+      </ul>
+    </div>
+    <div className="mt-4">
+      <h5>Data Sources:</h5>
+      <ul>
+        <li>WHO Global Health Observatory</li>
+        <li>CDC National Center for Health Statistics</li>
+        <li>Regional health databases</li>
       </ul>
     </div>
   </div>
@@ -87,16 +104,24 @@ const HealthOutcomes = () => (
 
 const Timeline = () => (
   <div className="container py-4">
-    <h2>Regulatory Timeline</h2>
+    <h2>Regulatory Impact Assessment</h2>
     <p className="lead">
-      Timeline of significant food safety regulatory changes in both regions.
+      Timeline analysis of regulatory changes and corresponding health outcomes.
     </p>
     <div className="alert alert-info">
-      Visualization coming soon. This section will feature a timeline showing:
+      <h5>Analysis Focus:</h5>
       <ul className="mb-0 mt-2">
-        <li>Major regulatory changes</li>
-        <li>Implementation dates</li>
-        <li>Impact assessments</li>
+        <li>Major policy implementation dates</li>
+        <li>Changes in health metrics following regulatory changes</li>
+        <li>Cross-regional policy comparison</li>
+      </ul>
+    </div>
+    <div className="mt-4">
+      <h5>Visualization Features:</h5>
+      <ul>
+        <li>Interactive timeline of policy changes</li>
+        <li>Health metric overlays</li>
+        <li>Impact assessment indicators</li>
       </ul>
     </div>
   </div>
