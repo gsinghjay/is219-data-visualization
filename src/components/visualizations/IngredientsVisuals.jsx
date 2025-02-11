@@ -261,7 +261,7 @@ const IngredientsVisuals = () => {
 
   if (error) {
     return (
-      <div className="alert alert-danger m-3" role="alert">
+      <div className="alert alert-danger m-3 rounded-0" role="alert">
         <h4 className="alert-heading">Error Loading Data</h4>
         <p>{error}</p>
         <hr />
@@ -274,8 +274,8 @@ const IngredientsVisuals = () => {
     <div className="row g-4">
       {/* Distribution Pie Chart */}
       <div className="col-md-6">
-        <div className="card h-100">
-          <div className="card-header">
+        <div className="card h-100 rounded-0">
+          <div className="card-header rounded-0">
             <h5 className="mb-0">Substance Distribution by Category (US vs EU)</h5>
           </div>
           <div className="card-body">
@@ -314,8 +314,8 @@ const IngredientsVisuals = () => {
 
       {/* Food Categories Bar Chart */}
       <div className="col-md-6">
-        <div className="card h-100">
-          <div className="card-header">
+        <div className="card h-100 rounded-0">
+          <div className="card-header rounded-0">
             <h5 className="mb-0">Top Food Categories with Restrictions</h5>
           </div>
           <div className="card-body">
@@ -356,14 +356,14 @@ const IngredientsVisuals = () => {
 
       {/* High Risk Substances Table */}
       <div className="col-12">
-        <div className="card">
-          <div className="card-header">
+        <div className="card rounded-0">
+          <div className="card-header rounded-0">
             <h5 className="mb-0">High Risk Substances Details</h5>
           </div>
           <div className="card-body">
-            <div className="table-responsive" style={{ maxHeight: '400px' }}>
-              <table className="table table-hover table-sm">
-                <thead className="sticky-top bg-white">
+            <div className="table-responsive rounded-0" style={{ maxHeight: '400px' }}>
+              <table className="table table-hover table-sm rounded-0">
+                <thead className="sticky-top bg-white rounded-0">
                   <tr>
                     <th>Substance</th>
                     <th>CAS Number</th>
@@ -381,7 +381,7 @@ const IngredientsVisuals = () => {
                           substance.usStatus === 'Allowed' ? 'success' :
                           substance.usStatus === 'Prohibited' ? 'danger' :
                           'secondary'
-                        }`}>
+                        } rounded-0`}>
                           {substance.usStatus}
                         </span>
                       </td>
@@ -397,20 +397,20 @@ const IngredientsVisuals = () => {
 
       {/* Summary Statistics */}
       <div className="col-12">
-        <div className="card">
-          <div className="card-header">
+        <div className="card rounded-0">
+          <div className="card-header rounded-0">
             <h5 className="mb-0">Key Findings</h5>
           </div>
           <div className="card-body">
             <div className="row g-4">
               <div className="col-md-3">
-                <div className="border rounded p-3 text-center">
+                <div className="border rounded-0 p-3 text-center">
                   <h6 className="text-muted mb-2">High Risk Substances</h6>
                   <h2 className="mb-0">{highRiskData.length}</h2>
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="border rounded p-3 text-center">
+                <div className="border rounded-0 p-3 text-center">
                   <h6 className="text-muted mb-2">US Allowed</h6>
                   <h2 className="mb-0">
                     {highRiskData.filter(s => s.usStatus === 'Allowed').length}
@@ -418,7 +418,7 @@ const IngredientsVisuals = () => {
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="border rounded p-3 text-center">
+                <div className="border rounded-0 p-3 text-center">
                   <h6 className="text-muted mb-2">US Prohibited</h6>
                   <h2 className="mb-0">
                     {highRiskData.filter(s => s.usStatus === 'Prohibited').length}
@@ -426,7 +426,7 @@ const IngredientsVisuals = () => {
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="border rounded p-3 text-center">
+                <div className="border rounded-0 p-3 text-center">
                   <h6 className="text-muted mb-2">Not Listed in US</h6>
                   <h2 className="mb-0">
                     {highRiskData.filter(s => s.usStatus === 'Not Listed').length}

@@ -33,7 +33,7 @@ const Navigation = () => {
               <NavLink
                 to="/ingredients"
                 className={({ isActive }) =>
-                  `nav-link px-3 py-2 rounded-pill ${isActive ? 'active bg-primary bg-opacity-10' : ''}`
+                  `nav-link px-3 py-2 rounded-0 ${isActive ? 'active bg-primary bg-opacity-10' : ''}`
                 }
               >
                 <FontAwesomeIcon icon={faFlask} className="me-2 text-primary" />
@@ -44,7 +44,7 @@ const Navigation = () => {
               <NavLink
                 to="/health-outcomes"
                 className={({ isActive }) =>
-                  `nav-link px-3 py-2 rounded-pill ${isActive ? 'active bg-success bg-opacity-10' : ''}`
+                  `nav-link px-3 py-2 rounded-0 ${isActive ? 'active bg-success bg-opacity-10' : ''}`
                 }
               >
                 <FontAwesomeIcon icon={faChartLine} className="me-2 text-success" />
@@ -55,7 +55,7 @@ const Navigation = () => {
               <NavLink
                 to="/timeline"
                 className={({ isActive }) =>
-                  `nav-link px-3 py-2 rounded-pill ${isActive ? 'active bg-warning bg-opacity-10' : ''}`
+                  `nav-link px-3 py-2 rounded-0 ${isActive ? 'active bg-warning bg-opacity-10' : ''}`
                 }
               >
                 <FontAwesomeIcon icon={faTimeline} className="me-2 text-warning" />
