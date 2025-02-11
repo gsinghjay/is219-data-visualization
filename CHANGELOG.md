@@ -1,6 +1,41 @@
 # CHANGELOG
 
 
+## v1.0.0 (2025-02-11)
+
+### Chores
+
+- Cleanup for gh-pages
+  ([`99d14ee`](https://github.com/gsinghjay/is219-data-visualization/commit/99d14ee7edcb2b024de3892b26725f7ba335f41f))
+
+- Rebuild and deploy to GitHub Pages
+  ([`86393ae`](https://github.com/gsinghjay/is219-data-visualization/commit/86393aead886f7d960f7b352f69188078c58e6f5))
+
+- Update homepage URL for GitHub Pages deployment
+  ([`f372021`](https://github.com/gsinghjay/is219-data-visualization/commit/f3720215dac85a9757a54bb7fc492038aea1f82a))
+
+### Features
+
+- Updated docs
+  ([`4e66bc9`](https://github.com/gsinghjay/is219-data-visualization/commit/4e66bc95d3e7e148eeef3f2cdd409dbe05801659))
+
+BREAKING CHANGE: ready to be displayed in class locally or via gh-pages
+
+### Refactoring
+
+- **ui**: Improve layout consistency and accessibility
+  ([`6ae2270`](https://github.com/gsinghjay/is219-data-visualization/commit/6ae2270cbd0cd66f27f7a7330974deab1f2d044c))
+
+- Remove flex styling from body element - Add rounded-0 class consistently across all components -
+  Center bulleted lists while maintaining left alignment - Update card headers with consistent
+  rounded corners - Improve visual consistency in data visualizations - Enhance modal and alert
+  styling
+
+### BREAKING CHANGES
+
+- Ready to be displayed in class locally or via gh-pages
+
+
 ## v0.3.3 (2025-02-11)
 
 ### Bug Fixes
