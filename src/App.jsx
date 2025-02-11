@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask, faChartLine, faTimeline } from '@fortawesome/free-solid-svg-icons';
 import Layout from './components/Layout';
+import IngredientsVisuals from './components/visualizations/IngredientsVisuals';
 
 // Placeholder components - we'll implement these next
 const Home = () => (
@@ -69,6 +70,8 @@ const Ingredients = () => (
         How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
       </p>
     </div>
+    
+    <IngredientsVisuals />
     
     <div className="row mt-4">
       <div className="col-md-6">
