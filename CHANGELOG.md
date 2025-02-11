@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.3.1 (2025-02-11)
+
+### Bug Fixes
+
+- Update data file paths for GitHub Pages deployment
+  ([`b277b28`](https://github.com/gsinghjay/is219-data-visualization/commit/b277b288dcc9d468fbaae94c8a3c25c0d9352761))
+
+- Update remaining data file paths for GitHub Pages
+  ([`d1df084`](https://github.com/gsinghjay/is219-data-visualization/commit/d1df084439aa7b28a8e3fc833938f93bacf8c7c7))
+
+### Chores
+
+- Configure GitHub Pages deployment
+  ([`ea686ae`](https://github.com/gsinghjay/is219-data-visualization/commit/ea686aef0aa00c6eefe89bef655b43a4ede5e2a3))
+
+
 ## v0.3.0 (2025-02-11)
 
 ### Bug Fixes
