@@ -18,7 +18,7 @@ const Home = () => (
               <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3" />
               <h5 className="card-title">Ingredients Comparison</h5>
               <p className="card-text text-center">
-                Analysis of banned and allowed ingredients in both regions.
+                Interactive table comparing banned and allowed ingredients in both regions.
               </p>
             </div>
           </div>
@@ -29,7 +29,7 @@ const Home = () => (
               <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3" />
               <h5 className="card-title">Health Outcomes</h5>
               <p className="card-text text-center">
-                Comparative analysis of health statistics and their potential correlation with food regulations.
+                Side-by-side bar charts comparing health outcomes between regions.
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Home = () => (
               <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3" />
               <h5 className="card-title">Regulatory Timeline</h5>
               <p className="card-text text-center">
-                Timeline of significant regulatory changes and their impacts.
+                Timeline visualization of significant regulatory changes.
               </p>
             </div>
           </div>
@@ -50,9 +50,57 @@ const Home = () => (
   </div>
 );
 
-const Ingredients = () => <div>Ingredients Comparison (Coming Soon)</div>;
-const HealthOutcomes = () => <div>Health Outcomes Analysis (Coming Soon)</div>;
-const Timeline = () => <div>Regulatory Timeline (Coming Soon)</div>;
+// Create placeholder components for each visualization section
+const Ingredients = () => (
+  <div className="container py-4">
+    <h2>Ingredients Comparison</h2>
+    <p className="lead">
+      Interactive table comparing banned and allowed ingredients between US and EU food regulations.
+    </p>
+    <div className="alert alert-info">
+      Visualization coming soon. This section will feature an interactive table showing:
+      <ul className="mb-0 mt-2">
+        <li>Banned ingredients in each region</li>
+        <li>Allowed ingredients with different restrictions</li>
+        <li>Filtering and search capabilities</li>
+      </ul>
+    </div>
+  </div>
+);
+
+const HealthOutcomes = () => (
+  <div className="container py-4">
+    <h2>Health Outcomes Analysis</h2>
+    <p className="lead">
+      Side-by-side bar charts comparing health statistics between US and EU populations.
+    </p>
+    <div className="alert alert-info">
+      Visualization coming soon. This section will feature bar charts comparing:
+      <ul className="mb-0 mt-2">
+        <li>Key health metrics between regions</li>
+        <li>Trends over time</li>
+        <li>Statistical correlations with regulations</li>
+      </ul>
+    </div>
+  </div>
+);
+
+const Timeline = () => (
+  <div className="container py-4">
+    <h2>Regulatory Timeline</h2>
+    <p className="lead">
+      Timeline of significant food safety regulatory changes in both regions.
+    </p>
+    <div className="alert alert-info">
+      Visualization coming soon. This section will feature a timeline showing:
+      <ul className="mb-0 mt-2">
+        <li>Major regulatory changes</li>
+        <li>Implementation dates</li>
+        <li>Impact assessments</li>
+      </ul>
+    </div>
+  </div>
+);
 
 /**
  * Main App component with routing configuration
