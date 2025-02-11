@@ -3,14 +3,14 @@ import Layout from './components/Layout';
 
 // Placeholder components - we'll implement these next
 const Home = () => (
-  <div className="container h-100 d-flex align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
-    <div className="text-center">
+  <div className="container-fluid h-100 d-flex align-items-center justify-content-center py-5" style={{ minHeight: '80vh' }}>
+    <div className="text-center w-100">
       <h1 className="display-4 mb-4">Food Safety Regulation Analysis</h1>
       <p className="lead mb-5">
         Comparing food safety regulations between the US and EU, and examining their potential health implications.
       </p>
-      <div className="row g-4 justify-content-center">
-        <div className="col-md-4">
+      <div className="row g-4 justify-content-center mx-0">
+        <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <h5 className="card-title">Ingredients Comparison</h5>
@@ -20,7 +20,7 @@ const Home = () => (
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <h5 className="card-title">Health Outcomes</h5>
@@ -30,7 +30,7 @@ const Home = () => (
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
               <h5 className="card-title">Regulatory Timeline</h5>

@@ -9,13 +9,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
  */
 const Layout = () => {
   return (
-    <div className="d-flex flex-column min-vh-100 bg-light">
+    <div className="min-vh-100 d-flex flex-column">
       <Navigation />
-      <main className="container py-4 flex-grow-1">
+      <main className="flex-grow-1">
         <Outlet />
       </main>
-      <footer className="bg-white py-3 mt-auto border-top">
-        <div className="container text-center text-muted">
+      <footer className="bg-white py-3 border-top">
+        <div className="container-fluid text-center text-muted">
           Food Safety Regulation Analysis - US vs EU
         </div>
       </footer>

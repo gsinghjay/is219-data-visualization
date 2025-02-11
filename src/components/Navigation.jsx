@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div className="container">
+      <div className="container-fluid px-4">
         <NavLink to="/" className="navbar-brand fw-bold">
           Food Safety Analysis
         </NavLink>
