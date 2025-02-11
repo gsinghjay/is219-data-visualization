@@ -58,6 +58,13 @@ const Ingredients = () => (
       Comprehensive comparison of food additives regulation between US and EU regions.
     </p>
     
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+      <h5 className="mb-2">Essential Question:</h5>
+      <p className="mb-0 fw-bold">
+        How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
+      </p>
+    </div>
+    
     <div className="row mt-4">
       <div className="col-md-6">
         <div className="card mb-4">
@@ -146,6 +153,14 @@ const HealthOutcomes = () => (
     <p className="lead">
       Analysis of public health metrics and their potential correlation with food regulations.
     </p>
+    
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+      <h5 className="mb-2">Essential Question:</h5>
+      <p className="mb-0 fw-bold">
+        How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
+      </p>
+    </div>
+
     <div className="alert alert-info">
       <h5>Key Metrics:</h5>
       <ul className="mb-0 mt-2">
@@ -172,6 +187,14 @@ const Timeline = () => (
     <p className="lead">
       Timeline analysis of regulatory changes and corresponding health outcomes.
     </p>
+    
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+      <h5 className="mb-2">Essential Question:</h5>
+      <p className="mb-0 fw-bold">
+        How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
+      </p>
+    </div>
+
     <div className="alert alert-info">
       <h5>Analysis Focus:</h5>
       <ul className="mb-0 mt-2">
