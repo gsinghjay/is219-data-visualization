@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlask, faChartLine, faTimeline } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Navigation component providing links to different sections of the application
@@ -31,6 +33,7 @@ const Navigation = () => {
                   `nav-link ${isActive ? 'active' : ''}`
                 }
               >
+                <FontAwesomeIcon icon={faFlask} className="me-2" />
                 Ingredients
               </NavLink>
             </li>
@@ -41,6 +44,7 @@ const Navigation = () => {
                   `nav-link ${isActive ? 'active' : ''}`
                 }
               >
+                <FontAwesomeIcon icon={faChartLine} className="me-2" />
                 Health Outcomes
               </NavLink>
             </li>
@@ -51,6 +55,7 @@ const Navigation = () => {
                   `nav-link ${isActive ? 'active' : ''}`
                 }
               >
+                <FontAwesomeIcon icon={faTimeline} className="me-2" />
                 Regulatory Timeline
               </NavLink>
             </li>

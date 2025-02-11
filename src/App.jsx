@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlask, faChartLine, faTimeline } from '@fortawesome/free-solid-svg-icons';
 import Layout from './components/Layout';
 
 // Placeholder components - we'll implement these next
@@ -13,6 +15,7 @@ const Home = () => (
         <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
+              <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3" />
               <h5 className="card-title">Ingredients Comparison</h5>
               <p className="card-text text-center">
                 Analysis of banned and allowed ingredients in both regions.
@@ -23,6 +26,7 @@ const Home = () => (
         <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
+              <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3" />
               <h5 className="card-title">Health Outcomes</h5>
               <p className="card-text text-center">
                 Comparative analysis of health statistics and their potential correlation with food regulations.
@@ -33,6 +37,7 @@ const Home = () => (
         <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
+              <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3" />
               <h5 className="card-title">Regulatory Timeline</h5>
               <p className="card-text text-center">
                 Timeline of significant regulatory changes and their impacts.
