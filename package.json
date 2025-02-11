@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gsinghjay.github.io/is219-data-visualization",
+  "homepage": "https://YOURUSERNAME.github.io/is219-data-visualization",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
