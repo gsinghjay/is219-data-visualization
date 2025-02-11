@@ -20,7 +20,7 @@ const Layout = () => {
       </main>
       <footer className="bg-white py-3 border-top">
         <div className="container text-center text-muted">
-          Food Safety Regulation Analysis - US vs EU
+          Food Safety Regulation Analysis - US vs EU by <a href="https://github.com/gsinghjay/is219-data-visualization">Jay Singh (js426)</a>
         </div>
       </footer>
     </div>
