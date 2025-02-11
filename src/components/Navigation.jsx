@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFlask, faChartLine, faTimeline, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
+import { faFlask, faChartLine, faTimeline, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Navigation component providing links to different sections of the application
@@ -11,7 +11,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container-fluid px-4">
         <NavLink to="/" className="navbar-brand fw-bold">
-          <FontAwesomeIcon icon={faShieldHalved} className="me-2 text-primary" />
+          <FontAwesomeIcon icon={faUtensils} className="me-2 text-success" />
           Food Safety Analysis
         </NavLink>
         <button
