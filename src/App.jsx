@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask, faChartLine, faTimeline, faFileAlt, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
