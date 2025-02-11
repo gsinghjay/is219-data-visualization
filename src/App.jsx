@@ -57,7 +57,70 @@ const Ingredients = () => (
     <p className="lead">
       Comprehensive comparison of food additives regulation between US and EU regions.
     </p>
-    <div className="alert alert-info">
+    
+    <div className="row mt-4">
+      <div className="col-md-6">
+        <div className="card mb-4">
+          <div className="card-header bg-warning text-dark">
+            <h5 className="mb-0">High-Risk Substances</h5>
+          </div>
+          <div className="card-body">
+            <p>Found 46 substances that are allowed in the US but are considered high-risk in the EU, with strict usage limits.</p>
+            <h6 className="mt-3">Notable Examples:</h6>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                <strong>Hydroxypropyl methyl cellulose</strong> (CAS: 9004-65-3)
+                <br />
+                <small className="text-muted">Limited to 10 mg/kg in fresh fruits and vegetables in the EU</small>
+              </li>
+              <li className="list-group-item">
+                <strong>Silicon dioxide</strong> (CAS: 7631-86-9)
+                <br />
+                <small className="text-muted">Limited to 30 mg/kg in seasonings and condiments in the EU</small>
+              </li>
+              <li className="list-group-item">
+                <strong>Dimethyl polysiloxane</strong> (CAS: 9016-00-6)
+                <br />
+                <small className="text-muted">Limited to 10 mg/kg/l in various categories:</small>
+                <ul className="mt-1 small">
+                  <li>Fruit juices</li>
+                  <li>Confectionery</li>
+                  <li>Fruit/vegetable spreads</li>
+                  <li>Fats and oils</li>
+                  <li>Decorations and coatings</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-md-6">
+        <div className="card mb-4">
+          <div className="card-header bg-info text-dark">
+            <h5 className="mb-0">Regulatory Differences</h5>
+          </div>
+          <div className="card-body">
+            <h6>Banned Substances</h6>
+            <p>No direct matches found between banned substances in both regions, likely due to:</p>
+            <ul>
+              <li>Different naming conventions between regulatory bodies</li>
+              <li>Different approaches to regulation (outright bans vs. usage restrictions)</li>
+              <li>Specific subset of data (indirect additives vs. all additives)</li>
+            </ul>
+            
+            <h6 className="mt-4">Data Structure Differences</h6>
+            <ul>
+              <li>US data uses CAS Registry Numbers as unique chemical identifiers</li>
+              <li>EU data uses E-numbers and focuses on usage restrictions by category</li>
+              <li>Both datasets include various synonyms and alternative names</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="alert alert-info mt-4">
       <h5>Data Sources:</h5>
       <ul className="mb-0 mt-2">
         <li>FDA Food Additive Database</li>
@@ -65,8 +128,9 @@ const Ingredients = () => (
         <li>GRAS (Generally Recognized as Safe) Substances</li>
       </ul>
     </div>
+    
     <div className="mt-4">
-      <h5>Coming Visualizations:</h5>
+      <h5>Upcoming Visualizations:</h5>
       <ul>
         <li>Interactive comparison table of allowed vs banned ingredients</li>
         <li>Usage restrictions and limits visualization</li>
