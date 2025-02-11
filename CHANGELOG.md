@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.3 (2025-02-11)
+
+### Bug Fixes
+
+- Update routing for GitHub Pages
+  ([`8d2103c`](https://github.com/gsinghjay/is219-data-visualization/commit/8d2103cef1f349fa5176017d50d0b4b91b2f7a7c))
+
+
 ## v0.3.2 (2025-02-11)
 
 ### Bug Fixes
