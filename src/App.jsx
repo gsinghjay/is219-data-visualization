@@ -8,10 +8,15 @@ const Home = () => (
   <div className="container-fluid h-100 d-flex align-items-center justify-content-center py-5" style={{ minHeight: '80vh' }}>
     <div className="text-center w-100">
       <h1 className="display-4 mb-4">Food Safety Regulation Analysis</h1>
-      <p className="lead mb-5">
+      <p className="lead mb-4">
         Analyzing the relationship between food regulations in the US and EU, focusing on allowed ingredients,
         obesity rates, and public health outcomes.
       </p>
+      <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-5 mx-auto" style={{ maxWidth: '800px' }}>
+        <p className="mb-0 fw-bold">
+          How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
+        </p>
+      </div>
       <div className="row g-4 justify-content-center mx-0">
         <div className="col-md-4 px-4">
           <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
