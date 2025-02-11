@@ -1,6 +1,26 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-02-11)
+
+### Features
+
+- Add essential question to all analysis pages
+  ([`9fe7649`](https://github.com/gsinghjay/is219-data-visualization/commit/9fe76492695c1d6872bfd42a407660658c2291a0))
+
+- Add essential question to home page as thesis statement
+  ([`5b67458`](https://github.com/gsinghjay/is219-data-visualization/commit/5b674585935582a84b326b91cf782e1f28af2cb5))
+
+- Add EU food additives data processing
+  ([`95114c6`](https://github.com/gsinghjay/is219-data-visualization/commit/95114c68ca1193a1e32d4f3b33e69cc1bb5f0fb7))
+
+- Add US-EU additives analysis findings to ingredients page
+  ([`d0e89b9`](https://github.com/gsinghjay/is219-data-visualization/commit/d0e89b95a281f69235840c206837b9571a3b350f))
+
+- Add US-EU food additives comparison analysis
+  ([`36022f7`](https://github.com/gsinghjay/is219-data-visualization/commit/36022f721485bd1c3a10e27b34b50b1126df7b02))
+
+
 ## v0.1.0 (2025-02-11)
 
 ### Bug Fixes
@@ -19,6 +39,9 @@
   ([`cf924b2`](https://github.com/gsinghjay/is219-data-visualization/commit/cf924b2f3d4baee2132ff016b06500414df6606e))
 
 ### Documentation
+
+- Add comprehensive data sources documentation
+  ([`e3871ab`](https://github.com/gsinghjay/is219-data-visualization/commit/e3871ab18da62c78b734b42a3b172db2e8e03d76))
 
 - Update project scope and placeholder components to match simplified visualization plan
   ([`26da771`](https://github.com/gsinghjay/is219-data-visualization/commit/26da771ef5297bf42c2106161df07ed26e86b1b5))
