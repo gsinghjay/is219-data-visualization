@@ -69,10 +69,9 @@ const DataSourcesModal = ({ show, onHide }) => {
                   <div className="d-flex w-100 justify-content-between align-items-center">
                     <h6 className="mb-1">US Food Additives</h6>
                     <a 
-                      href="/data/raw/us-food-additives/indirect-additives.csv" 
-                      className="btn btn-sm btn-outline-primary" 
+                      className="btn btn-primary"
+                      href={`${import.meta.env.BASE_URL}data/raw/us-food-additives/indirect-additives.csv`}
                       download
-                      onClick={(e) => e.stopPropagation()}
                     >
                       <FontAwesomeIcon icon={faFileAlt} className="me-2" />
                       Download CSV
@@ -84,10 +83,9 @@ const DataSourcesModal = ({ show, onHide }) => {
                   <div className="d-flex w-100 justify-content-between align-items-center">
                     <h6 className="mb-1">EU High-Risk Additives</h6>
                     <a 
-                      href="/data/processed/eu-food-additives/eu_high_risk_additives.csv" 
-                      className="btn btn-sm btn-outline-primary" 
+                      className="btn btn-primary"
+                      href={`${import.meta.env.BASE_URL}data/processed/eu-food-additives/eu_high_risk_additives.csv`}
                       download
-                      onClick={(e) => e.stopPropagation()}
                     >
                       <FontAwesomeIcon icon={faFileAlt} className="me-2" />
                       Download CSV
