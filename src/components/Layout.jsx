@@ -12,11 +12,15 @@ const Layout = () => {
     <div className="min-vh-100 d-flex flex-column">
       <Navigation />
       <main className="flex-grow-1">
-        <Outlet />
+        <div className="container-fluid px-0">
+          <div className="container">
+            <Outlet />
+          </div>
+        </div>
       </main>
       <footer className="bg-white py-3 border-top">
-        <div className="container-fluid text-center text-muted">
-          Food Safety Regulation Analysis - US vs EU
+        <div className="container text-center text-muted">
+          Food Safety Regulation Analysis - US vs EU by <a href="https://github.com/gsinghjay/is219-data-visualization">Jay Singh (js426)</a>
         </div>
       </footer>
     </div>
