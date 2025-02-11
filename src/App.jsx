@@ -97,7 +97,7 @@ const DataSourcesModal = ({ show, onHide }) => {
                   <div className="d-flex w-100 justify-content-between align-items-center">
                     <h6 className="mb-1">US-EU Comparison Data</h6>
                     <a 
-                      href="/data/processed/comparison/us_eu_comparison.csv" 
+                      href={`${import.meta.env.BASE_URL}data/processed/comparison/us_eu_comparison.csv`}
                       className="btn btn-sm btn-outline-primary" 
                       download
                       onClick={(e) => e.stopPropagation()}
