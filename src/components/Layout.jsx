@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navigation from './Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Link } from 'react-router-dom';
 
 /**
  * Layout component that provides the main structure for the application
@@ -27,4 +28,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Layout; 

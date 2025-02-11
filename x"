@@ -1,0 +1,5 @@
+[33m30ca78e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;33mtag: v0.3.1[m[33m, [m[1;31morigin/main[m[33m)[m 0.3.1
+[33m8f83094[m Merge pull request #3 from gsinghjay/fix/ghub-pages
+[33md1df084[m[33m ([m[1;31morigin/fix/ghub-pages[m[33m, [m[1;32mfix/ghub-pages[m[33m)[m fix: update remaining data file paths for GitHub Pages
+[33mb277b28[m fix: update data file paths for GitHub Pages deployment
+[33me817b20[m Merge pull request #2 from gsinghjay/feat/ghub-pages
