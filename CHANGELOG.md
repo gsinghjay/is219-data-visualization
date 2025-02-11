@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.2 (2025-02-11)
+
+### Bug Fixes
+
+- Remove accidental git text from Layout.jsx
+  ([`f582af4`](https://github.com/gsinghjay/is219-data-visualization/commit/f582af42efcbc88169d6ae229293eda9129a418b))
+
+
 ## v0.3.1 (2025-02-11)
 
 ### Bug Fixes
