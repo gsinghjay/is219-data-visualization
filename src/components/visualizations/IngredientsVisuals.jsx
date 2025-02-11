@@ -31,9 +31,9 @@ const IngredientsVisuals = () => {
         setError(null);
         // Load all data files
         const [comparisonResponse, highRiskResponse, usResponse] = await Promise.all([
-          fetch('/data/processed/comparison/us_eu_comparison.csv'),
-          fetch('/data/processed/eu-food-additives/eu_high_risk_additives.csv'),
-          fetch('/data/raw/us-food-additives/indirect-additives.csv')
+          fetch(`${import.meta.env.BASE_URL}data/processed/comparison/us_eu_comparison.csv`),
+          fetch(`${import.meta.env.BASE_URL}data/processed/eu-food-additives/eu_high_risk_additives.csv`),
+          fetch(`${import.meta.env.BASE_URL}data/raw/us-food-additives/indirect-additives.csv`)
         ]);
 
         const comparisonText = await comparisonResponse.text();
