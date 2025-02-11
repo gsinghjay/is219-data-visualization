@@ -150,14 +150,14 @@ const Home = () => {
             <div className="row g-4 justify-content-center">
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body text-center">
+                  <div className="card-body d-flex flex-column justify-content-center text-center">
                     <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3 text-primary" />
                     <h5 className="card-title">Ingredients Analysis</h5>
                     <p className="card-text">
                       Interactive visualization of food additives regulations, comparing:
                     </p>
                     <div className="d-flex justify-content-center">
-                      <ul className="text-start small">
+                      <ul className="text-start small mb-0">
                         <li>High-risk substances analysis</li>
                         <li>Category distribution comparison</li>
                         <li>Food category restrictions</li>
@@ -169,14 +169,14 @@ const Home = () => {
               </div>
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body text-center">
+                  <div className="card-body d-flex flex-column justify-content-center text-center">
                     <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3 text-success" />
                     <h5 className="card-title">Health Outcomes</h5>
                     <p className="card-text">
                       Comprehensive health metrics analysis:
                     </p>
                     <div className="d-flex justify-content-center">
-                      <ul className="text-start small">
+                      <ul className="text-start small mb-0">
                         <li>Obesity trends analysis</li>
                         <li>Mortality rate comparisons</li>
                         <li>Disease prevalence data</li>
@@ -188,18 +188,18 @@ const Home = () => {
               </div>
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body text-center">
+                  <div className="card-body d-flex flex-column justify-content-center text-center">
                     <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3 text-warning" />
                     <h5 className="card-title">Regulatory Impact</h5>
                     <p className="card-text">
                       Timeline-based analysis of:
                     </p>
                     <div className="d-flex justify-content-center">
-                      <ul className="text-start small">
-                        <li>Policy implementation dates</li>
-                        <li>Health metric correlations</li>
+                      <ul className="text-start small mb-0">
+                        <li>Policy implementation effects</li>
+                        <li>Regulatory changes impact</li>
                         <li>Cross-regional comparisons</li>
-                        <li>Impact assessments</li>
+                        <li>Long-term health trends</li>
                       </ul>
                     </div>
                   </div>
