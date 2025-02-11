@@ -134,8 +134,8 @@ const Home = () => {
   const [showDataSourcesModal, setShowDataSourcesModal] = useState(false);
   
   return (
-    <div className="container py-5">
-      <div className="row justify-content-center">
+    <div className="py-5 w-100">
+      <div className="row justify-content-center mx-0">
         <div className="col-12">
           <div className="text-center">
             <h1 className="display-4 mb-4">Food Safety Regulation Analysis</h1>
@@ -249,7 +249,7 @@ const Home = () => {
 };
 
 const Ingredients = () => (
-  <div className="container py-4">
+  <div className="py-4 w-100">
     <h2>Food Ingredients Analysis</h2>
     <p className="lead">
       Comprehensive comparison of food additives regulation between US and EU regions.
@@ -347,7 +347,7 @@ const Ingredients = () => (
 );
 
 const HealthOutcomes = () => (
-  <div className="container py-4">
+  <div className="py-4 w-100">
     <h2>Health Outcomes Analysis</h2>
     <p className="lead">
       Analysis of public health metrics and their potential correlation with food regulations.
@@ -381,7 +381,7 @@ const HealthOutcomes = () => (
 );
 
 const Timeline = () => (
-  <div className="container py-4">
+  <div className="py-4 w-100">
     <h2>Regulatory Impact Assessment</h2>
     <p className="lead">
       Timeline analysis of regulatory changes and corresponding health outcomes.
