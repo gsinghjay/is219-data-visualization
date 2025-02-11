@@ -9,7 +9,7 @@ import { faFlask, faChartLine, faTimeline, faUtensils } from '@fortawesome/free-
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-      <div className="container-fluid px-4">
+      <div className="container">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <FontAwesomeIcon icon={faUtensils} className="me-2 text-primary" />
           <span className="fw-bold">Food Safety Analysis</span>
