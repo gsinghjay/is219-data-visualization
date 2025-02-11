@@ -58,7 +58,7 @@ const DataSourcesModal = ({ show, onHide }) => {
               <h5 className="modal-title">Food Additives Data Sources</h5>
               <button 
                 type="button" 
-                className="btn-close" 
+                className="btn-close rounded-0" 
                 onClick={onHide} 
                 aria-label="Close"
               ></button>
@@ -69,7 +69,7 @@ const DataSourcesModal = ({ show, onHide }) => {
                   <div className="d-flex w-100 justify-content-between align-items-center">
                     <h6 className="mb-1">US Food Additives</h6>
                     <a 
-                      className="btn btn-primary"
+                      className="btn btn-primary rounded-0"
                       href={`${import.meta.env.BASE_URL}data/raw/us-food-additives/indirect-additives.csv`}
                       download
                     >
@@ -83,7 +83,7 @@ const DataSourcesModal = ({ show, onHide }) => {
                   <div className="d-flex w-100 justify-content-between align-items-center">
                     <h6 className="mb-1">EU High-Risk Additives</h6>
                     <a 
-                      className="btn btn-primary"
+                      className="btn btn-primary rounded-0"
                       href={`${import.meta.env.BASE_URL}data/processed/eu-food-additives/eu_high_risk_additives.csv`}
                       download
                     >
@@ -98,7 +98,7 @@ const DataSourcesModal = ({ show, onHide }) => {
                     <h6 className="mb-1">US-EU Comparison Data</h6>
                     <a 
                       href={`${import.meta.env.BASE_URL}data/processed/comparison/us_eu_comparison.csv`}
-                      className="btn btn-sm btn-outline-primary" 
+                      className="btn btn-sm btn-outline-primary rounded-0" 
                       download
                       onClick={(e) => e.stopPropagation()}
                     >
@@ -111,7 +111,7 @@ const DataSourcesModal = ({ show, onHide }) => {
               </div>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" onClick={onHide}>Close</button>
+              <button type="button" className="btn btn-secondary rounded-0" onClick={onHide}>Close</button>
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ const Home = () => {
               Analyzing the relationship between food regulations in the US and EU, focusing on allowed ingredients,
               obesity rates, and public health outcomes.
             </p>
-            <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-5 mx-auto" style={{ maxWidth: '800px' }}>
+            <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-5 mx-auto rounded-0" style={{ maxWidth: '800px' }}>
               <p className="mb-0 fw-bold">
                 How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
               </p>
@@ -150,52 +150,58 @@ const Home = () => {
             <div className="row g-4 justify-content-center">
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                  <div className="card-body text-center">
                     <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3 text-primary" />
                     <h5 className="card-title">Ingredients Analysis</h5>
-                    <p className="card-text text-center">
+                    <p className="card-text">
                       Interactive visualization of food additives regulations, comparing:
                     </p>
-                    <ul className="text-start small">
-                      <li>High-risk substances analysis</li>
-                      <li>Category distribution comparison</li>
-                      <li>Food category restrictions</li>
-                      <li>Regulatory status tracking</li>
-                    </ul>
+                    <div className="d-flex justify-content-center">
+                      <ul className="text-start small">
+                        <li>High-risk substances analysis</li>
+                        <li>Category distribution comparison</li>
+                        <li>Food category restrictions</li>
+                        <li>Regulatory status tracking</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                  <div className="card-body text-center">
                     <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3 text-success" />
                     <h5 className="card-title">Health Outcomes</h5>
-                    <p className="card-text text-center">
+                    <p className="card-text">
                       Comprehensive health metrics analysis:
                     </p>
-                    <ul className="text-start small">
-                      <li>Obesity trends analysis</li>
-                      <li>Mortality rate comparisons</li>
-                      <li>Disease prevalence data</li>
-                      <li>Regional health disparities</li>
-                    </ul>
+                    <div className="d-flex justify-content-center">
+                      <ul className="text-start small">
+                        <li>Obesity trends analysis</li>
+                        <li>Mortality rate comparisons</li>
+                        <li>Disease prevalence data</li>
+                        <li>Regional health disparities</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4">
                 <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                  <div className="card-body text-center">
                     <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3 text-warning" />
                     <h5 className="card-title">Regulatory Impact</h5>
-                    <p className="card-text text-center">
+                    <p className="card-text">
                       Timeline-based analysis of:
                     </p>
-                    <ul className="text-start small">
-                      <li>Policy implementation dates</li>
-                      <li>Health metric correlations</li>
-                      <li>Cross-regional comparisons</li>
-                      <li>Impact assessments</li>
-                    </ul>
+                    <div className="d-flex justify-content-center">
+                      <ul className="text-start small">
+                        <li>Policy implementation dates</li>
+                        <li>Health metric correlations</li>
+                        <li>Cross-regional comparisons</li>
+                        <li>Impact assessments</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -203,13 +209,13 @@ const Home = () => {
             
             <div className="row mt-5 g-4 justify-content-center">
               <div className="col-md-8">
-                <div className="card border-0 bg-light">
+                <div className="card border-0 bg-light rounded-0">
                   <div className="card-body">
                     <h5 className="mb-3">Data Sources</h5>
                     <div className="row g-3">
                       <div className="col-md-4">
                         <button 
-                          className="btn btn-link text-decoration-none text-start p-0 d-flex align-items-center w-100"
+                          className="btn btn-link text-decoration-none text-start p-0 d-flex align-items-center w-100 rounded-0"
                           onClick={() => setShowDataSourcesModal(true)}
                         >
                           <FontAwesomeIcon icon={faFlask} className="text-primary me-2" />
@@ -253,7 +259,7 @@ const Ingredients = () => (
       Comprehensive comparison of food additives regulation between US and EU regions.
     </p>
     
-    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4 rounded-0">
       <h5 className="mb-2">Essential Question:</h5>
       <p className="mb-0 fw-bold">
         How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
@@ -265,7 +271,7 @@ const Ingredients = () => (
     <div className="row mt-4">
       <div className="col-md-6">
         <div className="card mb-4">
-          <div className="card-header bg-warning text-dark">
+          <div className="card-header bg-warning text-dark rounded-0">
             <h5 className="mb-0">High-Risk Substances</h5>
           </div>
           <div className="card-body">
@@ -301,7 +307,7 @@ const Ingredients = () => (
       
       <div className="col-md-6">
         <div className="card mb-4">
-          <div className="card-header bg-info text-dark">
+          <div className="card-header bg-info text-dark rounded-0">
             <h5 className="mb-0">Regulatory Differences</h5>
           </div>
           <div className="card-body">
@@ -324,7 +330,7 @@ const Ingredients = () => (
       </div>
     </div>
 
-    <div className="alert alert-info mt-4">
+    <div className="alert alert-info mt-4 rounded-0">
       <h5>Data Sources:</h5>
       <ul className="mb-0 mt-2">
         <li>FDA Food Additive Database</li>
@@ -351,14 +357,14 @@ const HealthOutcomes = () => (
       Analysis of public health metrics and their potential correlation with food regulations.
     </p>
     
-    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4 rounded-0">
       <h5 className="mb-2">Essential Question:</h5>
       <p className="mb-0 fw-bold">
         How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
       </p>
     </div>
 
-    <div className="alert alert-info">
+    <div className="alert alert-info rounded-0">
       <h5>Key Metrics:</h5>
       <ul className="mb-0 mt-2">
         <li>Obesity rates (adult and childhood)</li>
@@ -385,14 +391,14 @@ const Timeline = () => (
       Timeline analysis of regulatory changes and corresponding health outcomes.
     </p>
     
-    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4">
+    <div className="alert alert-primary border-0 bg-primary bg-opacity-10 mb-4 rounded-0">
       <h5 className="mb-2">Essential Question:</h5>
       <p className="mb-0 fw-bold">
         How do food safety regulations differ between the US and EU, and what are the potential health implications of these differences?
       </p>
     </div>
 
-    <div className="alert alert-info">
+    <div className="alert alert-info rounded-0">
       <h5>Analysis Focus:</h5>
       <ul className="mb-0 mt-2">
         <li>Major policy implementation dates</li>

@@ -10,16 +10,16 @@ import { Link } from 'react-router-dom';
  */
 const Layout = () => {
   return (
-    <div className="min-vh-100 d-flex flex-column">
+    <div className="min-vh-100">
       <Navigation />
-      <main className="flex-grow-1">
-        <div className="container-fluid px-0">
-          <div className="container">
+      <main className="h-100">
+        <div className="container-fluid px-0 rounded-0">
+          <div className="container rounded-0">
             <Outlet />
           </div>
         </div>
       </main>
-      <footer className="bg-white py-3 border-top">
+      <footer className="bg-white py-3 border-top rounded-0">
         <div className="container text-center text-muted">
           Food Safety Regulation Analysis - US vs EU by <a href="https://github.com/gsinghjay/is219-data-visualization">Jay Singh (js426)</a>
         </div>
