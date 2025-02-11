@@ -20,35 +20,83 @@ const Home = () => (
       </div>
       <div className="row g-4 justify-content-center mx-0">
         <div className="col-md-4 px-4">
-          <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
+          <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
-              <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3" />
+              <FontAwesomeIcon icon={faFlask} className="fa-3x mb-3 text-primary" />
               <h5 className="card-title">Ingredients Analysis</h5>
               <p className="card-text text-center">
-                Compare allowed and banned food additives between regions, including GRAS substances and E-numbers.
+                Interactive visualization of food additives regulations, comparing:
               </p>
+              <ul className="text-start small">
+                <li>High-risk substances analysis</li>
+                <li>Category distribution comparison</li>
+                <li>Food category restrictions</li>
+                <li>Regulatory status tracking</li>
+              </ul>
             </div>
           </div>
         </div>
         <div className="col-md-4 px-4">
-          <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
+          <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
-              <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3" />
+              <FontAwesomeIcon icon={faChartLine} className="fa-3x mb-3 text-success" />
               <h5 className="card-title">Health Outcomes</h5>
               <p className="card-text text-center">
-                Visualize obesity trends, mortality rates, and chronic disease prevalence across regions.
+                Comprehensive health metrics analysis:
               </p>
+              <ul className="text-start small">
+                <li>Obesity trends analysis</li>
+                <li>Mortality rate comparisons</li>
+                <li>Disease prevalence data</li>
+                <li>Regional health disparities</li>
+              </ul>
             </div>
           </div>
         </div>
         <div className="col-md-4 px-4">
-          <div className="card rounded-0 h-100" style={{ aspectRatio: '1/1' }}>
+          <div className="card rounded-0 h-100 shadow-sm hover-shadow" style={{ aspectRatio: '1/1' }}>
             <div className="card-body d-flex flex-column align-items-center justify-content-center">
-              <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3" />
+              <FontAwesomeIcon icon={faTimeline} className="fa-3x mb-3 text-warning" />
               <h5 className="card-title">Regulatory Impact</h5>
               <p className="card-text text-center">
-                Track policy changes and their correlation with public health metrics over time.
+                Timeline-based analysis of:
               </p>
+              <ul className="text-start small">
+                <li>Policy implementation dates</li>
+                <li>Health metric correlations</li>
+                <li>Cross-regional comparisons</li>
+                <li>Impact assessments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="row mt-5 g-4 justify-content-center">
+        <div className="col-md-8">
+          <div className="card border-0 bg-light">
+            <div className="card-body">
+              <h5 className="mb-3">Data Sources</h5>
+              <div className="row g-3">
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faFlask} className="text-primary me-2" />
+                    <small>FDA & EU Food Additives</small>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faChartLine} className="text-success me-2" />
+                    <small>WHO Health Statistics</small>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="d-flex align-items-center">
+                    <FontAwesomeIcon icon={faTimeline} className="text-warning me-2" />
+                    <small>Regulatory Databases</small>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
