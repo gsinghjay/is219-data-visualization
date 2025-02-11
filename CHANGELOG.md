@@ -1,6 +1,73 @@
 # CHANGELOG
 
 
+## v0.3.0 (2025-02-11)
+
+### Bug Fixes
+
+- Improve modal behavior with proper z-index, backdrop, and accessibility
+  ([`5df4be2`](https://github.com/gsinghjay/is219-data-visualization/commit/5df4be2ac2015ed44c79a211df51e52ea86ed4ac))
+
+- Improve page layout and centering by simplifying container structure
+  ([`ff6d8e0`](https://github.com/gsinghjay/is219-data-visualization/commit/ff6d8e037d1a6c1431494c3f3f26c19f951c0d9d))
+
+- **layout**: Improve layout centering and container hierarchy
+  ([`6c7df7f`](https://github.com/gsinghjay/is219-data-visualization/commit/6c7df7f17217aad3983578c2a3fd4e51d20d57a9))
+
+- Add container-fluid wrapper in Layout for proper width handling
+
+- Nest container inside for content centering
+
+- Remove redundant container classes from route components
+
+- Add w-100 class to ensure proper width within containers
+
+- Fix margin issues with mx-0 in grid rows
+
+- Maintain consistent padding across components
+
+- **nav**: Standardize navigation container classes
+  ([`8aaaf84`](https://github.com/gsinghjay/is219-data-visualization/commit/8aaaf846c8e8b1561e92cc05914f0106c9ef40a1))
+
+- Replace container-fluid with container for consistent width
+
+- Remove unnecessary padding classes
+
+- Align navigation container with main layout container
+
+- Ensure proper centering of navigation elements
+
+### Features
+
+- Add ingredients analysis visualizations
+  ([`52db9d7`](https://github.com/gsinghjay/is219-data-visualization/commit/52db9d755393eb86bcb72e4be4baa5491e105b25))
+
+- Enhance home page with detailed visualization previews and data sources section
+  ([`eac29b4`](https://github.com/gsinghjay/is219-data-visualization/commit/eac29b4a60f2252e154d24bdb21777c8430be47f))
+
+- Enhance ingredients visualization with US vs EU comparison
+  ([`df182f2`](https://github.com/gsinghjay/is219-data-visualization/commit/df182f23939c16c583a83e204ed8d56b93fd4dfb))
+
+- Add pie chart showing substance distribution by category for US and EU - Implement distinct color
+  schemes - Add error handling and loading states - Improve data processing - Add tooltips and
+  labels
+
+- Enhance ingredients visualizations with food category analysis
+  ([`3e3b77d`](https://github.com/gsinghjay/is219-data-visualization/commit/3e3b77dbdeb83468d233ddd8629f7add1c14481c))
+
+- Enhance navigation bar with improved styling and consistent color scheme
+  ([`6064306`](https://github.com/gsinghjay/is219-data-visualization/commit/606430638e0d87d0e33dfa6ba44921f9d40265fe))
+
+- **footer**: Add author attribution
+  ([`a70458c`](https://github.com/gsinghjay/is219-data-visualization/commit/a70458c7a71c7c6ee1cbae1e6636c023b2f34348))
+
+- Add author name and GitHub link to footer
+
+- Include UCID (js426)
+
+- Link to project repository
+
+
 ## v0.2.0 (2025-02-11)
 
 ### Features
