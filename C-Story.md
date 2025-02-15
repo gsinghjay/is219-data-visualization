@@ -48,11 +48,11 @@ Even this simple function goes through several steps to become something the CPU
 
 ```mermaid
 flowchart LR
-    A[High-Level C Code: add()]
-    B[Intermediate Code (IR)]
-    C[Optimized IR]
-    D[Assembly Instructions]
-    E[Machine Code]
+    A["High-Level C Code: add()"]
+    B["Intermediate Code (IR)"]
+    C["Optimized IR"]
+    D["Assembly Instructions"]
+    E["Machine Code"]
     
     A --> B
     B --> C
